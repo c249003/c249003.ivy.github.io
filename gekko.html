@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant - Gekko</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Valorant 紹介ページ</a></h1>
+        <nav>
+            <ul>
+                <li><a href="rules.html"><button class="nav-button"><i class="fas fa-book"></i>ルール</button></a></li>
+                <li><a href="agents.html"><button class="nav-button"><i class="fas fa-user-secret"></i>エージェント</button></a></li>
+                <li><a href="weapons.html"><button class="nav-button"><i class="fas fa-crosshairs"></i>武器</button></a></li>
+                <li><a href="maps.html"><button class="nav-button"><i class="fas fa-map"></i>マップ</button></a></li>
+                <li><a href="play-videos.html"><button class="nav-button"><i class="fas fa-video"></i>プレイ動画</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="content-section">
+            <h2 class="character-title">ゲッコー</h2>
+            <div class="character-intro">
+                <div class="character-image">
+                    <img src="img/gekko.png" alt="Gekko">
+                </div>
+                <div class="character-details">
+                    <p><strong>国籍:</strong>アメリカ</p>
+                    <p><strong>ロール:</strong> イニシエーター</p>
+                    <p>ゲッコーは敵を察知すると自動追尾+スタン付与の「ウィングマン」と視界内の敵にのみフラッシュ効果を付与する「ディジー」で優れたキル性能も高い万能なイニシエーターです。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>公式トレーラー</h2>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dMbXa5MvFd8?si=xQspuvWk84mOfyPe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+        <section class="content-section">
+            <h2>スキル</h2>
+            <table class="skill-table">
+                <thead>
+                    <tr>
+                        <th>スキル名</th>
+                        <th>値段</th>
+                        <th>所持上限</th>
+                        <th>説明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ウィングマン（Q）</td>
+                        <td>300</td>
+                        <td>1個</td>
+                        <td>ウィングマンを構える。「発射」でウィングマンを前方に送り出し索敵させる。ウィングマンは最初に視認した敵に向かってスタンを与える爆風を放つ。スパイク設置サイトまたは設置されたスパイクに照準を合わせた状態で「オルト射撃」で、ウィングマンがスパイクの設置または解除をする。スパイクを設置させるには、ゲッコーがスパイクを所持している必要がある。ウィングマンは一定時間が経過すると、球体になって活動を停止する。
+                            「インタラクト」で球体を回収することでき、短時間のクールダウン後にウィングマンを再び使用可能になる。</td>
+                    </tr>
+                    <tr>
+                        <td>ディジー(E)</td>
+                        <td>-</td>
+                        <td>1個</td>
+                        <td>ディジーを構える。「発射」でディジーを前方に放る。ディジーはチャージ後、視認した敵に向かってプラズマブラストを放ち、命中した敵の視界を奪う。ディジーは一定時間が経過すると、球体になって活動を停止する。「インタラクト」で球体を回収することでき、短時間のクールダウン後にディジーを再び使用可能になる。</td>
+                    </tr>
+                    <tr>
+                        <td>モッシュピット(C)</td>
+                        <td>250</td>
+                        <td>1個</td>
+                        <td>モッシュを構える。「発射」でモッシュをグレネードのように投げる。「オルト射撃」で軽く放る。モッシュは地面に触れると広範囲に分裂し、少ししてから爆発する。</td>
+                    </tr>
+                    <tr>
+                        <td>スラッシュ (X) - アルティメット</td>
+                        <td>-</td>
+                        <td>1個</td>
+                        <td>スラッシュを構える。「発射」でスラッシュの精神とリンクし、スラッシュを操作して相手陣地で動き回ることができる。「発動」で前方に飛んで爆発し、小範囲内の敵をすべて拘束する。スラッシュは一定時間が経過すると、球体になって活動を停止する。
+                            「インタラクト」で球体を回収することでき、短時間のクールダウン後にスラッシュを再び使用可能になる。スラッシュは一度だけ回収できる。</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="content-section">
+            <h2>立ち回りとおすすめマップ</h2>
+            <div class="strategy">
+                <h3>攻めの立ち回り</h3>
+                <p>攻撃側のゲッコーは、障害物にぶつかると方向転換をする「ウィングマン」でクリアリングを行い、エントリーをする際に敵の視界外からサイト内に「ディジー」を投げ込んでデュエリストのサポートをする立ち回りが基本となります。
+                    ディジーは他のアビリティと異なり、敵がアビリティを見ていなくとも弾が当たればフラッシュ状態になるため、窓や壁越しなど視界外から投げ込む方が効果的です。
+                    特に「ディジー」は移動速度が遅い上にヴァンダル1発で壊されるほどHPが低いため、敵に見られているポイントから投げ込むと簡単に壊されるので注意が必要です。</p>
+                
+                <h3>守りの立ち回り</h3>
+                <p>防衛側のゲッコーは、敵の侵攻に合わせて「モッシュピット」を使い遅延させつつ、敵のエントリーに「ウィングマン」や「ディジー」でカウンターキルを狙う立ち回りが基本となります。
+                    また、敵の行動を全て封じる「スラッシュ」やスパイク解除能力も持つ「ウィングマン」によるリテイク性能が非常に高いので、無理に防衛せず味方と合流してリテイクを狙う戦術も有効です。</p>
+                
+            </div>
+        </section>
+    </main>
+</body>
+</html>

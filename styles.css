@@ -1,0 +1,505 @@
+/* 全体のスタイル設定 */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #ff6f61;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #e53935;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ナビゲーションのスタイル */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-button {
+    background-color: #ffffff;
+    color: #d32f2f;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s;
+}
+
+.nav-button:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.nav-button:hover {
+    background-color: #b71c1c;
+    color: #ffffff;
+}
+
+.nav-button i {
+    margin-right: 5px;
+}
+
+/* メインコンテンツのスタイル */
+.main {
+    padding: 20px;
+    max-width: 1200px; /* コンテンツが画面全体に広がるように調整 */
+    margin: 0 auto;
+}
+
+/* コンテンツセクションのスタイル */
+.content-section {
+    max-width: 100%; /* セクションの幅を画面いっぱいに */
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.content-section h2 {
+    font-size: 2.2em;
+    color: #d32f2f;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.content-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* フッターのスタイル */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6f61;
+    border-top: 2px solid #e53935;
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;
+}
+
+/* トップに戻るボタンのスタイル */
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+#topButton:hover {
+    background-color: #ff6f61;
+}
+
+/* ティア表のスタイル */
+.tier-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tier-table th, .tier-table td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+}
+
+.tier-table th {
+    background-color: #ffffff;
+    color: #d32f2f;
+}
+
+.tier-table td {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* スキルテーブルのスタイル */
+.skill-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.skill-table th, .skill-table td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
+}
+
+.skill-table th {
+    background-color: #26a69a;
+    color: #ffffff;
+}
+
+.skill-table td {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* キャラクタータイルのスタイル */
+.character-tile {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.character-tile img {
+    display: block;
+    max-width: 100px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.character-tile p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: #333;
+}
+
+/* キャラクター行のスタイル */
+.character-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* キャラクター紹介の共通スタイル */
+.character-intro {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.character-image {
+    flex: 1;
+}
+
+.character-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.character-details {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.character-details h3 {
+    font-size: 1.6em;
+    margin-top: 0;
+    color: #26a69a;
+}
+
+.character-details p {
+    margin: 5px 0;
+}
+
+/* 水平線のスタイル */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #444;
+    margin: 20px 0;
+}
+
+/* 動画ラッパーのスタイル */
+.video-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* モバイル用のメディアクエリ */
+@media (max-width: 768px) {
+    .main {
+        padding: 10px;
+    }
+
+    .content-section {
+        padding: 1rem;
+    }
+
+    .character-tile img {
+        max-width: 80px;
+    }
+
+    .character-details {
+        margin-left: 10px;
+    }
+
+    .character-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .character-image {
+        margin-bottom: 10px;
+    }
+}
+
+/* Jettの詳細スタイル */
+.character-title {
+    font-size: 2.5em;
+    color: #d32f2f;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.character-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.character-image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.character-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.character-details {
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+}
+
+.character-details p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media (min-width: 768px) {
+    .character-intro {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .character-details {
+        margin-left: 20px;
+    }
+
+    .character-image {
+        margin-bottom: 0;
+    }
+}
+
+/* マップ画像のスタイル */
+.map-image img {
+    width: 100%;
+    max-width: 700px; /* 例：最大幅を700pxに変更 */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.character-details {
+    position: relative;
+}
+
+.more-link {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+}
+
+.map-details {
+    position: relative;
+}
+
+.more-link {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+}
+
+/* 武器画像のスタイル */
+.weapon-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weapon-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 武器テーブルのスタイル */
+.weapon-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.weapon-table th, .weapon-table td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
+}
+
+.weapon-table th {
+    background-color: #e75a5a;
+    color: #ffffff;
+}
+
+.weapon-table td {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.weapon-table tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+/* チーム構成テーブルのスタイル */
+.team-composition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.team-composition-table th {
+    background-color: #f09494;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.team-composition-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.team-composition-table img {
+    width: 80px; /* 画像のサイズを調整 */
+    height: auto;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+/* ローテーション画像のスタイル */
+.rotation-image-section {
+    position: relative;
+    width: 100%;
+    max-width: 700px; /* 必要に応じて調整 */
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.rotation-image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rotation-image-section img.fade-out {
+    opacity: 0;
+}
+
+.rotation-image-section img.fade-in {
+    opacity: 1;
+}

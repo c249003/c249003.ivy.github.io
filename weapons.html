@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant - 武器</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Valorant 紹介ページ</a></h1>
+        <nav>
+            <ul>
+                <li><a href="rules.html"><button class="nav-button"><i class="fas fa-book"></i>ルール</button></a></li>
+                <li><a href="agents.html"><button class="nav-button"><i class="fas fa-user-secret"></i>エージェント</button></a></li>
+                <li><a href="weapons.html"><button class="nav-button"><i class="fas fa-crosshairs"></i>武器</button></a></li>
+                <li><a href="maps.html"><button class="nav-button"><i class="fas fa-map"></i>マップ</button></a></li>
+                <li><a href="play-videos.html"><button class="nav-button"><i class="fas fa-video"></i>プレイ動画</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="content-section">
+            <h2>武器 ティア表</h2>
+            <table class="tier-table">
+                <thead>
+                    <tr>
+                        <th>ティア</th>
+                        <th>武器</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S</td>
+                        <td>
+                            <div class="character-row">
+                                <a href="#operator" class="character-tile">
+                                    <img src="img/operator.jpg" alt="Operator">
+                                    <p>オペレーター</p>
+                                </a>
+                                <a href="#vandal" class="character-tile">
+                                    <img src="img/vandal.jpg" alt="Vandal">
+                                    <p>ヴァンダル</p>
+                                </a>
+                                <a href="#phantom" class="character-tile">
+                                    <img src="img/phantom.jpg" alt="Phantom">
+                                    <p>ファントム</p>
+                                </a>
+                                <a href="#outlow" class="character-tile">
+                                    <img src="img/outlow.jpg" alt="outlow">
+                                    <p>アウトロー</p>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>
+                            <div class="character-row">
+                                <a href="#shorty" class="character-tile">
+                                    <img src="img/shorty.jpg" alt="shorty">
+                                    <p>ショーティー</p>
+                                </a>
+                                <a href="#sheriff" class="character-tile">
+                                    <img src="img/sheriff.jpg" alt="sheriff">
+                                    <p>シェリフ</p>
+                                </a>
+                                <a href="#judge" class="character-tile">
+                                    <img src="img/judge.jpg" alt="Judge">
+                                    <p>ジャッジ</p>
+                                </a>
+                                <a href="#spectre" class="character-tile">
+                                    <img src="img/spectre.jpg" alt="Spectre">
+                                    <p>スペクター</p>
+                                </a>
+                                <a href="#odin" class="character-tile">
+                                    <img src="img/odin.jpg" alt="odin">
+                                    <p>オーディン</p>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>
+                            <div class="character-row">
+                                <a href="#classic" class="character-tile">
+                                    <img src="img/classic.jpg" alt="classic">
+                                    <p>クラシック</p>
+                                </a>
+                                <a href="#ghost" class="character-tile">
+                                    <img src="img/ghost.jpg" alt="ghost">
+                                    <p>ゴースト</p>
+                                </a>
+                                <a href="#marshal" class="character-tile">
+                                    <img src="img/marshal.jpg" alt="Marshal">
+                                    <p>マーシャル</p>
+                                </a>
+                                <a href="#guardian" class="character-tile">
+                                    <img src="img/guardian.jpg" alt="Guardian">
+                                    <p>ガーディアン</p>
+                                </a>
+                                <a href="#bulldog" class="character-tile">
+                                    <img src="img/bulldog.jpg" alt="Bulldog">
+                                    <p>ブルドック</p>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>
+                            <div class="character-row">
+                                <a href="#stinger" class="character-tile">
+                                    <img src="img/stinger.jpg" alt="stinger">
+                                    <p>スティンガー</p>
+                                </a>
+                                <a href="#bucky" class="character-tile">
+                                    <img src="img/bucky.jpg" alt="Bucky">
+                                    <p>バッキー</p>
+                                </a>
+                                <a href="#ares" class="character-tile">
+                                    <img src="img/ares.jpg" alt="Ares">
+                                    <p>アレス</p>
+                                </a>
+                                <a href="#frenzy" class="character-tile">
+                                    <img src="img/frenzy.jpg" alt="frenzy">
+                                    <p>フレンジー</p>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="content-section">
+            <h2>武器</h2>
+            <div class="weapon-category">
+                <h3>ハンドガン</h3>
+                <div class="weapon-intro" id="classic">
+                    <div class="weapon-image">
+                        <img src="img/classic.jpg" alt="クラシック">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>クラシック</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>0クレジット</td></tr>
+                            <tr><th>マガジン</th><td>12発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>78</td></tr>
+                            <tr><th>胴体ダメージ</th><td>26</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>22</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="weapon-intro" id="shorty">
+                    <div class="weapon-image">
+                        <img src="img/shorty.jpg" alt="ショーティー">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>ショーティー</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>150クレジット</td></tr>
+                            <tr><th>マガジン</th><td>2発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>36</td></tr>
+                            <tr><th>胴体ダメージ</th><td>12</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>10</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="weapon-intro" id="frenzy">
+                    <div class="weapon-image">
+                        <img src="img/frenzy.jpg" alt="フレンジー">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>フレンジー</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>400クレジット</td></tr>
+                            <tr><th>マガジン</th><td>13発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>63</td></tr>
+                            <tr><th>胴体ダメージ</th><td>21</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>18</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="weapon-intro" id="ghost">
+                    <div class="weapon-image">
+                        <img src="img/ghost.jpg" alt="ゴースト">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>ゴースト</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>500クレジット</td></tr>
+                            <tr><th>マガジン</th><td>15発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>105</td></tr>
+                            <tr><th>胴体ダメージ</th><td>30</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>25</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="weapon-intro" id="sheriff">
+                    <div class="weapon-image">
+                        <img src="img/sheriff.jpg" alt="シェリフ">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>シェリフ</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>800クレジット</td></tr>
+                            <tr><th>マガジン</th><td>6発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>160</td></tr>
+                            <tr><th>胴体ダメージ</th><td>55</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>47</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="weapon-category">
+                <h3>ショットガン</h3>
+                <div class="weapon-intro" id="bucky">
+                    <div class="weapon-image">
+                        <img src="img/bucky.jpg" alt="バッキー">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>バッキー</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>900クレジット</td></tr>
+                            <tr><th>マガジン</th><td>5発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>44</td></tr>
+                            <tr><th>胴体ダメージ</th><td>22</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>19</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="weapon-intro" id="judge">
+                    <div class="weapon-image">
+                        <img src="img/judge.jpg" alt="ジャッジ">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>ジャッジ</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>1500クレジット</td></tr>
+                            <tr><th>マガジン</th><td>7発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>34</td></tr>
+                            <tr><th>胴体ダメージ</th><td>17</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>14</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="weapon-category">
+                <h3>サブマシンガン</h3>
+                <div class="weapon-intro" id="spectre">
+                    <div class="weapon-image">
+                        <img src="img/spectre.jpg" alt="スペクター">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>スペクター</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>1600クレジット</td></tr>
+                            <tr><th>マガジン</th><td>30発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>78</td></tr>
+                            <tr><th>胴体ダメージ</th><td>26</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>22</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="weapon-intro" id="stinger">
+                    <div class="weapon-image">
+                        <img src="img/stinger.jpg" alt="ステンガー">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>ステンガー</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>1000クレジット</td></tr>
+                            <tr><th>マガジン</th><td>20発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>67</td></tr>
+                            <tr><th>胴体ダメージ</th><td>27</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>23</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="weapon-category">
+                <h3>ライフル</h3>
+                <div class="weapon-intro" id="phantom">
+                    <div class="weapon-image">
+                        <img src="img/phantom.jpg" alt="ファントム">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>ファントム</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>2900クレジット</td></tr>
+                            <tr><th>マガジン</th><td>30発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>156</td></tr>
+                            <tr><th>胴体ダメージ</th><td>39</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>33</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="weapon-intro" id="vandal">
+                    <div class="weapon-image">
+                        <img src="img/vandal.jpg" alt="ヴァンダル">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>ヴァンダル</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>2900クレジット</td></tr>
+                            <tr><th>マガジン</th><td>25発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>160</td></tr>
+                            <tr><th>胴体ダメージ</th><td>40</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>34</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="weapon-intro" id="bulldog">
+                    <div class="weapon-image">
+                        <img src="img/bulldog.jpg" alt="ブルドック">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>ブルドック</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>2100クレジット</td></tr>
+                            <tr><th>マガジン</th><td>24発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>116</td></tr>
+                            <tr><th>胴体ダメージ</th><td>35</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>30</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="weapon-intro" id="guardian">
+                    <div class="weapon-image">
+                        <img src="img/guardian.jpg" alt="ガーディアン">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>ガーディアン</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>2400クレジット</td></tr>
+                            <tr><th>マガジン</th><td>12発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>195</td></tr>
+                            <tr><th>胴体ダメージ</th><td>65</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>49</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="weapon-category">
+                <h3>スナイパーライフル</h3>
+                <div class="weapon-intro" id="marshal">
+                    <div class="weapon-image">
+                        <img src="img/marshal.jpg" alt="マーシャル">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>マーシャル</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>950クレジット</td></tr>
+                            <tr><th>マガジン</th><td>5発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>202</td></tr>
+                            <tr><th>胴体ダメージ</th><td>101</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>85</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="weapon-intro" id="operator">
+                    <div class="weapon-image">
+                        <img src="img/operator.jpg" alt="オペレーター">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>オペレーター</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>4500クレジット</td></tr>
+                            <tr><th>マガジン</th><td>5発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>255</td></tr>
+                            <tr><th>胴体ダメージ</th><td>150</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>127</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="weapon-intro" id="outlow">
+                    <div class="weapon-image">
+                        <img src="img/outlow.jpg" alt="オペレーター">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>オペレーター</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>2400クレジット</td></tr>
+                            <tr><th>マガジン</th><td>2発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>238</td></tr>
+                            <tr><th>胴体ダメージ</th><td>140</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>119</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="weapon-category">
+                <h3>マシンガン</h3>
+                <div class="weapon-intro" id="ares">
+                    <div class="weapon-image">
+                        <img src="img/ares.jpg" alt="アレス">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>アレス</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>1600クレジット</td></tr>
+                            <tr><th>マガジン</th><td>50発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>72</td></tr>
+                            <tr><th>胴体ダメージ</th><td>30</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>25</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="weapon-intro" id="odin">
+                    <div class="weapon-image">
+                        <img src="img/odin.jpg" alt="オーディン">
+                    </div>
+                    <div class="weapon-details">
+                        <h4>オーディン</h4>
+                        <table class="weapon-table">
+                            <tr><th>購入費用</th><td>3200クレジット</td></tr>
+                            <tr><th>マガジン</th><td>100発</td></tr>
+                            <tr><th>頭部ダメージ</th><td>95</td></tr>
+                            <tr><th>胴体ダメージ</th><td>38</td></tr>
+                            <tr><th>腕/脚ダメージ</th><td>32</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Valorant</p>
+    </footer>
+    <button onclick="scrollToTop()" id="topButton" title="Go to top">トップに戻る</button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.onscroll = function() { toggleTopButton() };
+
+        function toggleTopButton() {
+            var topButton = document.getElementById("topButton");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

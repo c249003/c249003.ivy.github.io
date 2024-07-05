@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant - アセント マップ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Valorant 紹介ページ</a></h1>
+        <nav>
+            <ul>
+                <li><a href="rules.html"><button class="nav-button"><i class="fas fa-book"></i>ルール</button></a></li>
+                <li><a href="agents.html"><button class="nav-button"><i class="fas fa-user-secret"></i>エージェント</button></a></li>
+                <li><a href="weapons.html"><button class="nav-button"><i class="fas fa-crosshairs"></i>武器</button></a></li>
+                <li><a href="maps.html"><button class="nav-button"><i class="fas fa-map"></i>マップ</button></a></li>
+                <li><a href="play-videos.html"><button class="nav-button"><i class="fas fa-video"></i>プレイ動画</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="content-section">
+            <h2>アセントのマップ</h2>
+            <div class="map-image">
+                <img src="img/ascent.jpg" alt="アセントマップ">
+            </div>
+            
+            <h3>情報・特徴</h3>
+            <p>アセントはAサイトとBサイトの両方に高耐久値のシャッターを開閉することができるギミックが設置されており、他のマップと比べてミッドが広く作られている上に「オペレーター」などの遠距離武器の射線を通しやすい影響で、最短距離でのローテートが難しいという特徴を持っています。</p>
+            <p>また、建築物の「隙間」と障害物が豊富に存在することもあって「ワンウェイスモーク」や「リコンボルトの曲射」などアビリティテクニックを活用することができるポイントが多く、初期実装のマップでありながら今も絶えず研究がされている奥が深いマップでもあります。</p>
+            
+            <!-- 全体マップ画像の追加 -->
+            <h3>全体マップ・マップの詳細</h3>
+            <div class="map-image">
+                <img src="img/ascentmap.jpg" alt="アセント全体マップ">
+            </div>
+
+            <h3>アセントのおすすめ構成</h3>
+            <p>アセントは障害物と高低差が多いマップであり、射線を長く取りやすいルートが重要ポイントとなっているので中距離戦が発生しやすくなっています。特に設置系アビリティが効果を発揮しやすい地形をしているため「キルジョイ」と相性が良く、攻撃側においてもラーカーの察知・牽制を行いやすく、安全地帯で「ロックダウン」を使用することでラッシュへのカウンターやリテイクでも活躍できるのが非常に強力です。</p>
+            <p>また「キルジョイ」へのカウンターピックとなる「ソーヴァ」も同様に採用優先度が高く、敵プレイヤーだけでなく設置系アビリティを看破することで戦局を一方的にコントロールされることを防ぐことが可能です。</p>
+
+            <!-- アセントのおすすめチーム構成テーブル -->
+            <table class="team-composition-table">
+                <tr>
+                    <th colspan="5">おすすめチーム構成</th>
+                </tr>
+                <tr>
+                    <td><img src="img/jett.png" alt="ジェット"><br>ジェット</td>
+                    <td><img src="img/sova.png" alt="ソーヴァ"><br>ソーヴァ</td>
+                    <td><img src="img/kayo.png" alt="KAY/O"><br>KAY/O</td>
+                    <td><img src="img/omen.png" alt="オーメン"><br>オーメン</td>
+                    <td><img src="img/killjoy.png" alt="キルジョイ"><br>キルジョイ</td>
+                </tr>
+            </table>
+
+            <h3>アセントの基本的な攻め方</h3>
+             
+            <h4>Aサイト側の立ち回り</h4>
+            <p>アセントのAサイト側を攻める場合は、ピークやエントリーの起点となるAメインを迅速に確保することが重要になります。スモークやフラッシュを活用してクリアリングを行い、ヘヴンとAスイッチの射線をスモークで塞ぐ必要があります。</p>
+
+            <h4>Bサイト側の立ち回り</h4>
+            <p>Bサイトを攻める場合は、ピークやエントリーの起点となるBメイン・中央マーケットの2ヶ所を確保することが重要です。Bメインと中央マーケットへの圧を掛けて戦力を分散させ、スモークを設置してフラッシュで押し込むことも有効な戦術です。</p>
+
+            <h3>アセントの基本的な守り方</h3>
+            <!-- ローテーション画像のセクション -->
+            <div class="map-image">
+                <img id="mapImage" src="img/ascent_bt.jpg" alt="アセントマップ">
+            </div>
+
+            <h4>Aサイト側の立ち回り</h4>
+            <p>アセントのAサイトを守る場合は、AラフターとAリンクに配置してAメインからの侵攻を抑えます。エイム力に自信がある場合は、Aサイト入り口からピークして積極的にキルを狙うのも効果的です。</p>
+
+            <h4>Bサイト側の立ち回り</h4>
+            <p>Bサイトを守る場合は、マーケット・ロウアーに配置してBメインからの侵攻を抑えます。壁抜きを活用し、敵を足止めした後に「オーディン」で壁抜きを狙う戦術が強力です。</p>
+        
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Valorant</p>
+    </footer>
+    <button onclick="scrollToTop()" id="topButton" title="Go to top">トップに戻る</button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.onscroll = function() { toggleTopButton() };
+
+        function toggleTopButton() {
+            var topButton = document.getElementById("topButton");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+
+        // 画像ローテーションのためのJavaScript
+        var mapImages = ["img/ascent_op.jpg", "img/ascent_op1.jpg", "img/ascent_op2.jpg", "img/ascent_op3.jpg"];
+        var currentIndex = 0;
+        var mapImageElement = document.getElementById("mapImage");
+
+        function rotateImages() {
+            mapImageElement.classList.remove("fade-in");
+            mapImageElement.classList.add("fade-out");
+
+            setTimeout(function() {
+                currentIndex = (currentIndex + 1) % mapImages.length;
+                mapImageElement.src = mapImages[currentIndex];
+                mapImageElement.classList.remove("fade-out");
+                mapImageElement.classList.add("fade-in");
+            }, 500); // 0.5秒のフェードアウトの後に画像を切り替える
+        }
+
+        setInterval(rotateImages, 4000); // 4秒ごとに画像をローテーション
+
+        // 攻め方セクションの画像ローテーション用JavaScript
+        var rotationImages = ["img/ascent_op.jpg", "img/ascent_op1.jpg", "img/ascent_op2.jpg", "img/ascent_op3.jpg"];
+        var currentRotationIndex = 0;
+        var rotationImageElement = document.getElementById("rotationImage");
+
+        function rotateAttackImages() {
+            rotationImageElement.classList.remove("fade-in");
+            rotationImageElement.classList.add("fade-out");
+
+            setTimeout(function() {
+                currentRotationIndex = (currentRotationIndex + 1) % rotationImages.length;
+                rotationImageElement.src = rotationImages[currentRotationIndex];
+                rotationImageElement.classList.remove("fade-out");
+                rotationImageElement.classList.add("fade-in");
+            }, 500); // 0.5秒のフェードアウトの後に画像を切り替える
+        }
+
+        setInterval(rotateAttackImages, 5000); // 5秒ごとに画像をローテーション
+    </script>
+</body>
+</html>
