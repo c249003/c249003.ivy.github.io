@@ -503,3 +503,66 @@ hr {
 .rotation-image-section img.fade-in {
     opacity: 1;
 }
+/* サブナビゲーションのスタイル */
+.sub-nav {
+    margin-top: 20px;
+}
+
+.sub-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sub-nav li {
+    margin: 0 10px;
+}
+
+.sub-nav a {
+    text-decoration: none;
+}
+
+.sub-nav .nav-button {
+    background-color: #ffffff;
+    color: #d32f2f;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-nav .nav-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s;
+}
+
+.sub-nav .nav-button:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.sub-nav .nav-button:hover {
+    background-color: #b71c1c;
+    color: #ffffff;
+}
+
+.sub-nav .nav-button i {
+    margin-right: 5px;
+}
